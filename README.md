@@ -19,7 +19,7 @@ Students Api build using Node.js / Express and set up using Mongoose / MongoDB.N
 
 	Testing is performed through mockgoose(testing on Mongoose based applications) and chai(assertion package).
 	Sample Object 
-	{"date_Added":"2021-08-07T17:32:42.099Z","_id":"610e315881047d3e037b139f","name":"Umair Khalid","rollNo":599,"address":"Lahore","mobile":3464441513,"email":"umair.khalid.599@gmail.com","__v":0}
+	{"date_Added":"2021-08-07T17:32:42.099Z","_id":"610e315881047d3e037b139f","name":"Umair Khalid","rollNo":599,"address":"Lahore","mobile":346321513,"email":"asghar799@gmail.com","__v":0}
 
 	For query: umair.khalid.599@gmail.com / http:merisite.online / Playstore app 'Umair Profile'
 
