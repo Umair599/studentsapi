@@ -1,6 +1,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import StudentModel from '../model/student.js';
+import {validationResult} from 'express-validator';
 const router = express.Router();
 export const getStudentsRecord =async (req, res)=>{
     try{
@@ -21,8 +22,10 @@ export const getStudentRecord =async (req, res)=>{
         res.status(404).json({message: error.message});
     }
 }
-export const createStudentRecord =async (req, res)=>{
+export const createStudentRecord = async (req, res)=>{
     const {name, rollNo, address, mobile, email}= req.body;
+    const errors=validationResult(req);
+    if(!errors.isEmpty()) return res.status(400).json({errors: errors.array()});
     try{
         const studentData= new StudentModel({name, rollNo, address, mobile, email});
         await studentData.save();
