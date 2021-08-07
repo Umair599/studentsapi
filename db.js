@@ -8,7 +8,6 @@ export const connect=()=> {
   return new Promise((resolve, reject) => {
 
     if (process.env.NODE_ENV === 'test') {
-      //const Mockgoose = require('mockgoose').Mockgoose;
       const mockgoose = new Mockgoose(mongoose);
 
       mockgoose.prepareStorage()
