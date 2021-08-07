@@ -17,7 +17,7 @@ Students Api build using Node.js / Express and set up using Mongoose / MongoDB.N
 	#How to run test
 	npm run test
 
-	Testing is performed through mockgoose(testing on Mongoose based applications) and chai(assertion package).
+	Testing is performed through mockgoose(testing on Mongoose based applications) / chai(assertion package) /supertes (Testing HTTP request).
 	Sample Object 
 	{"date_Added":"2021-08-07T17:32:42.099Z","_id":"610e315881047d3e037b139f","name":"Umair Khalid","rollNo":599,"address":"Lahore","mobile":346321513,"email":"asghar799@gmail.com","__v":0}
 
